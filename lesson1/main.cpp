@@ -1,17 +1,20 @@
 #include <iostream>
 
+using namespace std;
+
 int main()
 {
-    int main = 0;
+    string first_name;
+    int your_age;
+    cout << "Enter your first name: ";
+    cin >> first_name;
+    cout << "Cool that's My brother name" << endl;
+    cout << " Enter your age" << endl;
+    cin >> your_age;
+    cout << "You're as old as I am";
+    
+    
+    
 
-int your_name;
-int your_age;
-std :: cout << "Enter your name"; 
-std :: cin >> your_name;
-std :: cout << " that's my brother name";
-std :: cout << "Enter your age";
-std :: cin >> your_age;
-std :: cout << "cool! you are as old as I am" <<std::endl;
-
-return 0;
+    return 0;
 }
