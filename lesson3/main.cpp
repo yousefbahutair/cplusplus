@@ -9,9 +9,7 @@ int main()
     float number2;
     cout << "Enter the operation with spaces:";
     cin >> number1;
-    cout << "Enter the process: +, -, *, / :";
     cin >> op;
-    cout << "Enter another number:";
     cin >> number2;
     switch (op) { 
         case '+':
