@@ -7,7 +7,7 @@ int main()
     char op;
     float number1;
     float number2;
-    cout << "Enter first number:";
+    cout << "Enter the operation with spaces:";
     cin >> number1;
     cout << "Enter the process: +, -, *, / :";
     cin >> op;
