@@ -15,13 +15,13 @@ int main()
         case '+':
         cout << number1 + number2;
         break;
-        else '-' :
+        case '-' :
         cout << number1 -number2;
         break;
-        else '*':
+        case '*':
         cout << number1 * number2;
         break;
-        else '/':
+        case '/':
         cout << number1 / number2;
         break;
         
