@@ -5,12 +5,12 @@ using namespace std;
 int main()
 {
     char large_or_small;
-    int number_of_rooms;
-    int number_large;
-    int numbersmall;
-    double small_room_per_dirhams;
-    double large_room_per_dirhams;
-    float sale_tax;
+    int number_of_rooms{0};
+    int number_large{0};
+    int numbersmall{0};
+    const double small_room_per_dirhams{25};
+    const double large_room_per_dirhams{35};
+    const float sale_tax{0.06};
     cout << "Hello, welcome to RAK hotel" << endl;
     cout << "Large room per dirham is $" << large_room_per_dirhams << endl;
     cout << "Small room per dirham is $" << small_room_per_dirhams << endl;
