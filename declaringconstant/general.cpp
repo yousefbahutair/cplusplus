@@ -8,44 +8,51 @@ int main()
     int number_of_rooms{0};
     int number_large{0};
     int numbersmall{0};
-   double small_room_per_dirhams{25};
-   double large_room_per_dirhams{35};
-   float sale_tax{0.06};
-   cout << "Hello, welcomme to RAK hotel";
-   cout << "large room per dirham is $" << large_room_per_dirhams;
-   cout << "/nsmall room per dirham is $" << small_room_per_dirhams;
-   cout << "/nsale taxes per room is $" << sale_tax;
-   cout << "_____________________________________";
-   cout << "/nWould you like to take a large room or small room?(large/small/both)";
-   cin >> large_or_small;
-   switch (large_or_small)
-   {case "large" :
-   cout << "How many rooms do you want?";
-   cin >> number_of_rooms;
-   cout << "Price for all rooms is $" << number_of_rooms * 35 << endl;
-   cout << "Your sales taxes is $" << number_of_rooms * 35 * 0.06 << endl;
-   cout << "your total estimate is $" << (number_of_rooms * 35 * 0.06) + (number_of_rooms * 35) << endl;
-   break;
-   case "small":
-   cout << "How many rooms would you like to take?";
-   cin >> number_of_rooms;
-   cout << "Price for all rooms is $" << number_of_rooms * 25 << endl;
-   cout << "Your taxes is $" << number_of_rooms * 25 * 0.06 << endl;
-   cout << "Your total estimate is $" << (number_of_rooms * 25 * 0.06) + (number_of_rooms * 25) << endl;
-   break;
-   case "both" :
-   cout << " How many large room do you want to take?";
-   cin >> numbersmall;
-   cout << "And how many small rooms you want?";
-   cin >> number_large;
-   cout << " Price for all small and large rooms is $" << (numbersmall * 25) + (number_large * 35) << endl;
-   cout << "Your taxes is $" << ((numbersmall * 25) + (number_large * 35)) * 0.06 << endl;
-   cout << "Your total estimate is $" << (((numbersmall * 25) + (number_large * 35)) * 0.06) + (numbersmall * 25) + (number_large * 35) << endl;
-   break;
-     default:
-    cout << "Invalid input";
+    double small_room_per_dirhams{25};
+    double large_room_per_dirhams{35};
+    float sale_tax{0.06};
+    cout << "Hello, welcome to RAK hotel" << endl;
+    cout << "Large room per dirham is $" << large_room_per_dirhams << endl;
+    cout << "Small room per dirham is $" << small_room_per_dirhams << endl;
+    cout << "Sale taxes per room is $" << sale_tax << endl;
+    cout << "_____________________________________" << endl;
+    cout << "Would you like to take a large room or small room? (large/small/both) ";
+    cin >> large_or_small;
+    switch (large_or_small)
+    {
+        case 'l':
+        case 'L':
+            cout << "How many rooms do you want? ";
+            cin >> number_of_rooms;
+            cout << "Price for all rooms is $" << number_of_rooms * large_room_per_dirhams << endl;
+            cout << "Your sales taxes is $" << number_of_rooms * large_room_per_dirhams * sale_tax << endl;
+            cout << "Your total estimate is $" << (number_of_rooms * large_room_per_dirhams * sale_tax) + (number_of_rooms * large_room_per_dirhams) << endl;
+            break;
 
+        case 's':
+        case 'S':
+            cout << "How many rooms would you like to take? ";
+            cin >> number_of_rooms;
+            cout << "Price for all rooms is $" << number_of_rooms * small_room_per_dirhams << endl;
+            cout << "Your taxes is $" << number_of_rooms * small_room_per_dirhams * sale_tax << endl;
+            cout << "Your total estimate is $" << (number_of_rooms * small_room_per_dirhams * sale_tax) + (number_of_rooms * small_room_per_dirhams) << endl;
+            break;
 
-   }
+        case 'b':
+        case 'B':
+            cout << "How many large rooms do you want to take? ";
+            cin >> number_large;
+            cout << "And how many small rooms do you want? ";
+            cin >> numbersmall;
+            cout << "Price for all small and large rooms is $" << (numbersmall * small_room_per_dirhams) + (number_large * large_room_per_dirhams) << endl;
+            cout << "Your taxes is $" << ((numbersmall * small_room_per_dirhams) + (number_large * large_room_per_dirhams)) * sale_tax << endl;
+            cout << "Your total estimate is $" << (((numbersmall * small_room_per_dirhams) + (number_large * large_room_per_dirhams)) * sale_tax) + (numbersmall * small_room_per_dirhams) + (number_large * large_room_per_dirhams) << endl;
+            break;
+
+        default:
+            cout << "Invalid input";
+            break;
+    }
+
     return 0;
 }
