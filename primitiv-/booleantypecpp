@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    bool answer;
+    cout << "Are you above 18? (True/False)";
+    cin >> boolalpha >> answer;
+    
+    switch(answer) {
+        case true:
+            cout << "You're an adult";
+            break;
+        case false:
+            cout << "You are just a kid";
+            break;
+        default:
+            cout << "Invalid input";
+    }
+
+    return 0;
+}
