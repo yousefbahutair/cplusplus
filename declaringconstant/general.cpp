@@ -20,8 +20,8 @@ int main()
     cin >> large_or_small;
     switch (large_or_small)
     {
-        case 'l':
-        case 'L':
+        case 'large':
+        case 'Large':
             cout << "How many rooms do you want? ";
             cin >> number_of_rooms;
             cout << "Price for all rooms is $" << number_of_rooms * large_room_per_dirhams << endl;
@@ -29,8 +29,8 @@ int main()
             cout << "Your total estimate is $" << (number_of_rooms * large_room_per_dirhams * sale_tax) + (number_of_rooms * large_room_per_dirhams) << endl;
             break;
 
-        case 's':
-        case 'S':
+        case 'small':
+        case 'Small':
             cout << "How many rooms would you like to take? ";
             cin >> number_of_rooms;
             cout << "Price for all rooms is $" << number_of_rooms * small_room_per_dirhams << endl;
@@ -38,8 +38,8 @@ int main()
             cout << "Your total estimate is $" << (number_of_rooms * small_room_per_dirhams * sale_tax) + (number_of_rooms * small_room_per_dirhams) << endl;
             break;
 
-        case 'b':
-        case 'B':
+        case 'both':
+        case 'Both':
             cout << "How many large rooms do you want to take? ";
             cin >> number_large;
             cout << "And how many small rooms do you want? ";
