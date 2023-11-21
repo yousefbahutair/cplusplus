@@ -6,16 +6,16 @@ int main()
 {
     vector<int> moon_years(3);
     vector<int> moon_years2{10000, 572, 700};
-    cout << "Our moon was born in " << moon_years[0] << " BC" << endl;
-    cout << "and it split into two halves in " << moon_years[1] << " AD" << endl;
-    cout << "And now it looks like it does today since " << moon_years[2] << " AD" << endl;
-    cout << "There are " << moon_years.size() << " years in the vector" << endl;
+    cout << "Our moon was born in " << moon_years2[0] << " BC" << endl;
+    cout << "and it split into two halves in " << moon_years2[1] << " AD" << endl;
+    cout << "And now it looks like it does today since " << moon_years2[2] << " AD" << endl;
+    cout << "There are " << moon_years2.size() << " years in the vector" << endl;
 
     vector<int> moon_years3(3);
     vector<int> moon_years4{10000, 572, 700};
-    cout << "Our moon was born in " << moon_years.at(0) << " BC" << endl;
-    cout << "and it split into two halves in " << moon_years.at(1) << " AD" << endl;
-    cout << "And now it looks like it does today since " << moon_years.at(2) << " AD" << endl;
+    cout << "Our moon was born in " << moon_years4.at(0) << " BC" << endl;
+    cout << "and it split into two halves in " << moon_years4.at(1) << " AD" << endl;
+    cout << "And now it looks like it does today since " << moon_years4.at(2) << " AD" << endl;
     cout << "If you want to change the years, enter 3 years:" << endl;
     cin >> moon_years[0];
     cin >> moon_years[1];
