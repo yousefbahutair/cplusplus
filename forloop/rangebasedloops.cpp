@@ -3,11 +3,11 @@
 using namespace std;
 
 int main()
-{ vector<int> dgrees;
+{ vector<int> dgrees{};
+cout << "Enter dgrees" << endl;
 for( auto dgree: dgrees)
-cout << "Enter 4 dgrees" << endl;
 cin >> dgrees;
-cout << " Enter 4 dgrees" << dgrees << endl;
+cout << " Entered dgrees are" << dgrees << endl;
 
             
     return 0;
