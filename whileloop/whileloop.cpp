@@ -10,5 +10,6 @@ int main()
     cout << "Even";
     else
     cout << "Odd";}
+    break;
     return 0;
 }
