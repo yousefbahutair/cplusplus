@@ -9,7 +9,8 @@ int main()
     { if(number %2 ==0)
     cout << "Even";
     else
-    cout << "Odd";}
-    break;
+    cout << "Odd";
+    break;}
+    
     return 0;
 }
