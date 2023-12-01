@@ -3,12 +3,12 @@ using namespace std;
 
 int main()
 {
-    int number
+    int number = 0;
     cout << "Enter a number less than 100 and we'll tell you whether it's odd or even : "<< endl;
     while( number<=100)
-    { if(number %2 ==0)}
+    { if(number %2 ==0)
     cout << "Even";
-    if else( number %2 != 0)
-    cout << "Odd";
+    else
+    cout << "Odd";}
     return 0;
 }
