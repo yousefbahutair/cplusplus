@@ -8,10 +8,12 @@ int main() {
     
     cout << d << endl;
     
+    size_t position;
+    
     do {
         cout << "Enter word to find: ";
         cin >> word;
-        size_t position = d.find(word);
+        position = d.find(word);
         if (position == string::npos) {
             cout << "not found" << endl;
         }
