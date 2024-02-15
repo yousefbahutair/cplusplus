@@ -1,20 +1,18 @@
 #include <iostream>
-using namespace std;
 
 int main() {
-    float dividend, divisor, quotient;
+    try {
+        int numerator = 10;
+        int denominator = 0;
 
-    cout << "Enter the dividend: ";
-    cin >> dividend;
+        if (denominator == 0) {
+            throw "Division by zero detected!";
+        }
 
-    cout << "Enter the divisor: ";
-    cin >> divisor;
-
-    if (divisor != 0) {
-        quotient = dividend / divisor;
-        cout << "Quotient: " << quotient << endl;
-    } else {
-        cout << "Error: Division by zero is undefined!" << endl;
+        int result = numerator / denominator;
+        std::cout << "Result of division: " << result << std::endl;
+    } catch (const char* msg) {
+        std::cerr << "Error: " << msg << std::endl;
     }
 
     return 0;
